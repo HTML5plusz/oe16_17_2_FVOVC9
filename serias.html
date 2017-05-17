@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Sportverseny szervező</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/serias.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-table.css"/>
         <link rel="stylesheet" href="css/mycss.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-table.js"></script>
+        <script src="js/serias.js"></script>
     </head>
 
     <body>
@@ -18,15 +20,15 @@
             <li><a href="championships.html">Bajnokság indítása</a></li>
         </ol>
         <div>
-        <h1>Lekérdezett szériák</h1>
-        <table class="table table-bordered table-hover mytable" id="seriastable" border='1'>
+        <h2>Lekérdezett szériák</h2>
+        <table class="table table-bordered table-hover mytable" id="seriastable" border='1' >
             <tr>
                 <th>Name</th>
                 <th>Description</th>
             </tr>
         </table>
         </div>
-        <h1>Széria felvétel</h1>
+        <h2>Széria felvétel</h2>
         <form class="form-inline">
           <div class="form-group">
             <label for="name">Name</label>

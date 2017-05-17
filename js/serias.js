@@ -2,12 +2,11 @@ $(document).ready(function(){
 
 $.ajax({
     type: "GET",
-    url: 'http://94.177.230.203:8080/sport/rest/season/namedescription/all',
+    url: 'http://94.177.230.203:8080/sport/rest/seria/namedescription/all',
 
     dataType: "json",
     success: function (data) {
   $.each(data,function(d,results){
-  // ben is the id of the HTML table
  $("#seriastable").append(
                         "<tr>"
                           +"<td>"+results.name+"</td>"
@@ -19,11 +18,11 @@ $.ajax({
 });
 
 
-var forename = $("input[name=\"name\"]").val();
-var surname = $("input[name=\"desc\"]").val();
+var name = $("input[name=\"name\"]").val();
+var desc = $("input[name=\"desc\"]").val();
 
 $.ajax({
-    url: "http://94.177.230.203:8080/sport/rest/sport/save",
+    url: "http://94.177.230.203:8080/sport/rest/seria/save",
     type: "POST",
     async: true, // set to false if you don't mind the page pausing while waiting for response
     cache: false,
